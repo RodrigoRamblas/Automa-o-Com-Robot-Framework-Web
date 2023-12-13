@@ -14,6 +14,12 @@ Quando clico no menu lateral
     Click Element            ${MENU_LATERAL_SAND}   
 
 # E
+E clico no módulo Beneficios
+    Wait Until Element Is Visible    ${BENEFICIOS_MODULO} timeout=10s
+    Scroll Element Into View         ${BENEFICIOS_MODULO} 
+    Click Element                    ${BENEFICIOS_MODULO} 
+
+
 E clico em Ficha Financeira
     Wait Until Element Is Visible     ${FICHA_FINAN}    timeout=10s
     Sleep    5s

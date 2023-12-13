@@ -9,3 +9,4 @@ ${URL_SIMULADOR_BENEF}         https://www.portal-hro.com.br/portal/site/Multibr
 ${FICHA_FINAN}                 //a[contains(.,'Ficha Financeira')]      
 ${DEMOSTRATIV_PAG}             //a[contains(.,'Demonstrativo de pagamentos')]
 ${SIMULADOR_BENEFICIOS}        //a[contains(.,'Simulador de benefícios')]
+${BENEFICIOS_MODULO}           //a[contains(@class,'Menu2760')]

@@ -15,6 +15,7 @@ Quando clico no menu lateral
 # E
 E clico em Menu Solicitação de Alterações
     Wait Until Element Is Visible     ${MENU_SOL_ALTERA}    timeout=10s
+    Scroll Element Into View          ${MENU_SOL_ALTERA}
     Click Element                     ${MENU_SOL_ALTERA}
 
 # Então
