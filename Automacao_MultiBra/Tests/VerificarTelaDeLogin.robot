@@ -138,4 +138,15 @@ CT12:Acessar com logins adm
         adm.tecprev.teste1		                adm.tecprev.teste1
         adm.west.teste1			                adm.west.teste1
 
-
+# CT13: Testes Usuários em massa
+    # [Documentation]     Automação Verificar verifica logins de usuários
+    # [Tags]              CT13
+    # [Template]    Logins de usuários em massa
+	    #usuario_adm				            #senha_adm               
+        # adm.gdbprev.teste1		                adm.gdbprev.teste1
+        # adm.coatscd.teste1		                adm.coatscd.teste1
+        # adm.philipmorris.teste1		            adm.philipmorris.teste1
+        # adm.nadirprev.teste1		            adm.nadirprev.teste1
+        # adm.rabobank.teste1		                adm.rabobank.teste1
+        # adm.tecprev.teste1		                adm.tecprev.teste1
+        # adm.west.teste1			                adm.west.teste1

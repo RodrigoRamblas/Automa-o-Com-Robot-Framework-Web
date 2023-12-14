@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 Library    Collections
 Library    String
+Library    BuiltIn
 Library    OperatingSystem
 Resource   ../Variables/Login.robot
 Resource   ../Variables/Mapping.robot
@@ -27,7 +28,6 @@ Dado que clico em Esqueci minha senha
     Scroll Element Into View             ${CLICK_ESQUECI_SENHA}
     Click Element                        ${CLICK_ESQUECI_SENHA}
 
-
 Login com Usuário Assistido
     [Arguments]    ${Usuario}    ${Senha}
     TRY
@@ -46,6 +46,35 @@ Login com Usuário Assistido
     Então verifico os itens da lista Assistido
     Sair da página
 
+
+Logins de usuários em massa
+        [Arguments]    ${Usuario}    ${Senha}
+            TRY
+                Maximize Browser Window
+            EXCEPT    Error message
+                Log    message
+            END
+            Sleep    1s 
+            TRY
+                Scroll Element Into View            ${BOTAO_ACESSAR}
+                Input Text                          ${CAMPO_NOME}          ${Usuario} 
+                Input Text                          ${CAMPO_SENHA}         ${Senha}
+                ${is_button_visible}=               Run Keyword And Return Status    Element Should Be Visible    ${BOTÃO_ENTENDIDO}
+                ${button_existence}=                Run Keyword And Return Status    Log    Usuário com erro: ${Usuario}
+                Run Keyword If                      ${is_button_visible}    Click Element    ${BOTÃO_ENTENDIDO}
+                Click Element                        ${BOTAO_ACESSAR}
+                
+                ${button_existence}=                Run Keyword And Return Status    Page Should Contain Element    btnFechar
+                Run Keyword If                      '${button_existence}' == 'True'    Append To File          file_with_variable.txt    ${Usuario}\n
+                Run Keyword If                      '${button_existence}' == 'True'    Click Element    btnFechar
+                Quando clicar em menu lateral
+                Sair da página
+                
+            EXCEPT    Error message
+                Sair da página
+            END
+        
+    
 Login com Usuário Autopatrocinado
     [Arguments]    ${Usuario}    ${Senha}
 
