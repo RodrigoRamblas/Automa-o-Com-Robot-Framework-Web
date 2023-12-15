@@ -13,8 +13,8 @@ CT01:Verificar Tela de Ficha Financeira no potal MultiBra
     [Tags]           CT01
     # Não possui mais essa funcionalidade para perfil adm
     Dado que acesso o portal MultiBra com os usuarios "ut.tecprev.assistido1" - "ut.tecprev.assistido1"
-    E clico no módulo Beneficios
     Quando clico no menu lateral
+    E clico no módulo Beneficios
     E clico em Ficha Financeira
     # Então serei direcionado para página Ficha Financeira (URL ERRO)
 

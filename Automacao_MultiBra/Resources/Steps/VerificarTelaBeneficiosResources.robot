@@ -15,7 +15,6 @@ Quando clico no menu lateral
 
 # E
 E clico no módulo Beneficios
-    Wait Until Element Is Visible    ${BENEFICIOS_MODULO} timeout=10s
     Scroll Element Into View         ${BENEFICIOS_MODULO} 
     Click Element                    ${BENEFICIOS_MODULO} 
 
