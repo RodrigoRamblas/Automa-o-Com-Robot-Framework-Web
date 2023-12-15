@@ -14,4 +14,4 @@ Quando clico em Simulador de Beneficios
 
 # Então
 Então serei direcionado para página Simulador de Beneficios
-    Location Should Be              ${URL_SIMULADOR_BENEF}   
+    Location Should Be              ${URL_SIMULADOR_BENEF}       timeout=10s

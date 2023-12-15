@@ -48,8 +48,7 @@ Então serei direcionado para página Educação Previdenciária BRA
 Então serei direcionado para página Educação Previdenciária > Educação Financeira
     Sleep            2s    
     Switch Window    NEW
-    ${URL_EDUCACAO_FIN_GET}=    Get Location
-    Should Be Equal        ${URL_EDUCACAO_FIN_GET}         ${URL_EDUCACAO_FIN}
+    Location Should Be         ${URL_EDUCACAO_FIN}
 
 Então serei direcionado para página Curso on-line
     Sleep    2s
