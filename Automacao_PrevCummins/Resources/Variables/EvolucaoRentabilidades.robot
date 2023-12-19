@@ -5,4 +5,4 @@ ${URL_EVOLUCAO_RENTABILIDADES}           https://www.portal-hro.com.br/portal/si
 
 
 # XPATH
-${EVOLUCAO_RENTABILIDADES_INI}           (//span[contains(@class,'icon-personal')])[16]
+${EVOLUCAO_RENTABILIDADES_INI}           //h7[contains(.,'EVOLUÇÃO DAS RENTABILIDADES POR PERFIL')]

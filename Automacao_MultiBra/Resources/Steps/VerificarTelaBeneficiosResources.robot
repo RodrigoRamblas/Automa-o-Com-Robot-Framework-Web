@@ -21,17 +21,14 @@ E clico no módulo Beneficios
 
 E clico em Ficha Financeira
     Wait Until Element Is Visible     ${FICHA_FINAN}    timeout=10s
-    Sleep    5s
     Click Element                     ${FICHA_FINAN}
 
 E clico em Demonstrativo de pagamentos
     Wait Until Element Is Visible     ${DEMOSTRATIV_PAG}    timeout=10s
-    Sleep    5s
     Click Element                     ${DEMOSTRATIV_PAG}
 
 E clico em Simulador de beneficios
     Wait Until Element Is Visible     ${SIMULADOR_BENEFICIOS}    timeout=10s
-    Sleep    5s
     Click Element                     ${SIMULADOR_BENEFICIOS}
 
 # Então

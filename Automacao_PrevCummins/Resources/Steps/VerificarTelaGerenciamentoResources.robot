@@ -172,8 +172,7 @@ Então serei direcionado para página Informe Anual de Rendimentos
     Should Be Equal    ${URL_GEREN_FORM_IAR_GET}          ${URL_GEREN_FORM_IAR}
 
 Então serei direcionado para página Relação de participantes
-    ${URL_GEREN_FORM_RELA_PART_GET}=    Get Location    # Obtém a URL atual
-    Should Be Equal    ${URL_GEREN_FORM_RELA_PART_GET}          ${URL_GEREN_FORM_RELA_PART}
+    Location Should Be         ${URL_GEREN_FORM_RELA_PART}
 
 Então serei direcionado para página Declaração de Dívida e Ônus
     ${URL_GEREN_FORM_DEC_DIVID_ONUS_GET}=    Get Location    # Obtém a URL atual

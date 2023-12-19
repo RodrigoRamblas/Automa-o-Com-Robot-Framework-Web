@@ -3,10 +3,10 @@
 #Url
 ${URL_EDUCACAO_PREV}        https://www.portal-hro.com.br/portal/site/Multibra-Homolog/Action/EducacaoPrevidenciaria.aspx
 ${URL_EDUCACAO_PREV_BRA}    https://www.portal-hro.com.br/portal/site/Multibra-Homolog/EducacaoFinanceira/web/docs/O_Futuro_e_completo.pdf
-${URL_EDUCACAO_FIN}         https://banco.bradesco/html/classic/educacao-financeira/index.shtm
-${URL_CURSO_ONLINE}         https://www.unibrad.com.br/cursos
+${URL_EDUCACAO_FIN}         https://banco.bradesco/html/classic/resultado-busca/index-nova-busca.shtm?q=/html/classic/educacaofinanceira/&s=Classic
+${URL_CURSO_ONLINE}         https://www.unibrad.com.br/UniversidadeCorporativa/Curso/
 ${URL_MOVIMENT_CONVIVA}     http://movimentoconviva.com.br/
-${URL_JUNTOS_SAUDE}         https://wwws.bradescosaude.com.br/hotsite_Juntos_Pela_Saude/index.shtml
+${URL_JUNTOS_SAUDE}         https://www.bradescoseguros.com.br/juntospelasaude
 ${URL_CLUBE_VANTAGENS}      https://clubedevantagens.bradescoseguros.com.br/
 
 #Xpath

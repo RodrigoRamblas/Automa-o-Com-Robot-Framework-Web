@@ -14,5 +14,4 @@ Quando clico em Evolução da Rentabilidade
 
 # Então
 Então serei direcionado para página Evolução da Rentabilidade
-    ${URL_EVOLUCAO_RENTABILIDADES_GET}=     Get Location
-    Should Be Equal                  ${URL_EVOLUCAO_RENTABILIDADES_GET}        ${URL_EVOLUCAO_RENTABILIDADES}
+    Location Should Be               ${URL_EVOLUCAO_RENTABILIDADES}
