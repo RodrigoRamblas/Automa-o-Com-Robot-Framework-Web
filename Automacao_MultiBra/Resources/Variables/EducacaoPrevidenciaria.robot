@@ -18,3 +18,5 @@ ${MOVIMENT_CONVIVA}         //h4[@class='block-title'][contains(.,'Movimento Con
 ${LONGEVIDADE}              //h4[@class='block-title'][contains(.,'Circuito da Longevidade')]
 ${JUNTOS_PELA_SAUDE}        //h4[@class='block-title'][contains(.,'Juntos pela Saúde')]
 ${CLUBE_VANTEGENS}          //a[contains(@class,'btn btn-link btn-red')]
+
+

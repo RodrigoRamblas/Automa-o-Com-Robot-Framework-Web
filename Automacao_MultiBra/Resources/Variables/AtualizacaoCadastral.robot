@@ -5,4 +5,4 @@ ${URL_ATUALIZACAO_CADAST}               https://www.portal-hro.com.br/cadastro-h
 
 # Xpath
 ${ATUALIZACAO_CADAS}                    //a[@href='/portal/site/Multibra-Homolog/Action/ChamaDotNet.aspx?titulo=Cadastro'][contains(.,'Atualização Cadastral')]
-${ATUALIZACAO_CADAS_MODULO}             //i[contains(@class,'fa fa-angle-right chevron3')]
+${ATUALIZACAO_CADAS_MODULO}             //a[contains(@class,'Menu2753')]

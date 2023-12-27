@@ -1,101 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0b4 on win32)" generated="20231222 13:08:49.405" rpa="false" schemaversion="4">
-<suite id="s1" name="VerificarTelaRentabilidade" source="c:\Users\C5151356\Documents\Automa-o-Com-Robot-Framework-Web\Automacao_MultiBra\Tests\VerificarTelaRentabilidade.robot">
-<test id="s1-t1" name="CT01:Verificar Tela de Rentabilidade no potal MultiBra" line="11">
+<robot generator="Robot 6.1.1 (Python 3.12.0b4 on win32)" generated="20231227 14:00:20.276" rpa="false" schemaversion="4">
+<suite id="s1" name="VerificarTelaEducacaoPrevidenciaria" source="c:\Users\C5151356\Documents\Automa-o-Com-Robot-Framework-Web\Automacao_MultiBra\Tests\VerificarTelaEducacaoPrevidenciaria.robot">
+<test id="s1-t1" name="CT07: Verificar Tela de Educação Previdenciária &gt; Juntos Pela Saúde" line="58">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231222 13:08:49.778" level="INFO">Opening browser 'chrome' to base url 'https://www.portal-hro.com.br/portal/site/Multibra-Homolog/Login.aspx'.</msg>
-<status status="PASS" starttime="20231222 13:08:49.777" endtime="20231222 13:08:57.384"/>
+<msg timestamp="20231227 14:00:20.546" level="INFO">Opening browser 'chrome' to base url 'https://www.portal-hro.com.br/portal/site/Multibra-Homolog/Login.aspx'.</msg>
+<status status="PASS" starttime="20231227 14:00:20.546" endtime="20231227 14:00:26.321"/>
 </kw>
-<kw name="Dado que acesso o portal MultiBra com os usuarios &quot;adm.gdbprev.teste1&quot; - &quot;adm.gdbprev.teste1&quot;" library="VerificarTelaDeLoginResources" sourcename="Dado que acesso o portal MultiBra com os usuarios &quot;${Usuario}&quot; - &quot;${Senha}&quot;">
+<kw name="Dado que acesso o portal MultiBra com os usuarios &quot;ut.gdb.auto1&quot; - &quot;ut.gdb.auto1&quot;" library="VerificarTelaDeLoginResources" sourcename="Dado que acesso o portal MultiBra com os usuarios &quot;${Usuario}&quot; - &quot;${Senha}&quot;">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231222 13:08:57.385" endtime="20231222 13:08:57.547"/>
+<status status="PASS" starttime="20231227 14:00:26.323" endtime="20231227 14:00:26.437"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${BOTAO_ACESSAR}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231222 13:08:57.547" endtime="20231222 13:08:57.600"/>
+<status status="PASS" starttime="20231227 14:00:26.437" endtime="20231227 14:00:26.449"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${BOTAO_ACESSAR}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20231222 13:08:57.601" endtime="20231222 13:08:58.050"/>
+<status status="PASS" starttime="20231227 14:00:26.449" endtime="20231227 14:00:26.737"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CAMPO_NOME}</arg>
 <arg>${Usuario}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231222 13:08:58.051" level="INFO">Typing text 'adm.gdbprev.teste1' into text field '//input[contains(@name,'ctl00$ContentPlaceHolder1$username')]'.</msg>
-<status status="PASS" starttime="20231222 13:08:58.050" endtime="20231222 13:08:58.163"/>
+<msg timestamp="20231227 14:00:26.739" level="INFO">Typing text 'ut.gdb.auto1' into text field '//input[contains(@name,'ctl00$ContentPlaceHolder1$username')]'.</msg>
+<status status="PASS" starttime="20231227 14:00:26.738" endtime="20231227 14:00:26.816"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CAMPO_SENHA}</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231222 13:08:58.164" level="INFO">Typing text 'adm.gdbprev.teste1' into text field '//input[contains(@name,'ctl00$ContentPlaceHolder1$password')]'.</msg>
-<status status="PASS" starttime="20231222 13:08:58.164" endtime="20231222 13:08:58.251"/>
+<msg timestamp="20231227 14:00:26.817" level="INFO">Typing text 'ut.gdb.auto1' into text field '//input[contains(@name,'ctl00$ContentPlaceHolder1$password')]'.</msg>
+<status status="PASS" starttime="20231227 14:00:26.817" endtime="20231227 14:00:26.876"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${BOTÃO_ENTENDIDO}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231222 13:08:58.251" endtime="20231222 13:08:58.263"/>
+<status status="PASS" starttime="20231227 14:00:26.876" endtime="20231227 14:00:26.921"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BOTÃO_ENTENDIDO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231222 13:08:58.264" level="INFO">Clicking element 'cookieButton'.</msg>
-<status status="PASS" starttime="20231222 13:08:58.263" endtime="20231222 13:08:58.297"/>
+<msg timestamp="20231227 14:00:26.922" level="INFO">Clicking element 'cookieButton'.</msg>
+<status status="PASS" starttime="20231227 14:00:26.921" endtime="20231227 14:00:26.970"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BOTAO_ACESSAR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231222 13:08:58.297" level="INFO">Clicking element 'ContentPlaceHolder1_btnEntrar2'.</msg>
-<status status="PASS" starttime="20231222 13:08:58.297" endtime="20231222 13:09:00.596"/>
+<msg timestamp="20231227 14:00:26.970" level="INFO">Clicking element 'ContentPlaceHolder1_btnEntrar2'.</msg>
+<status status="PASS" starttime="20231227 14:00:26.970" endtime="20231227 14:00:29.522"/>
 </kw>
-<status status="PASS" starttime="20231222 13:08:57.385" endtime="20231222 13:09:00.596"/>
+<status status="PASS" starttime="20231227 14:00:26.322" endtime="20231227 14:00:29.522"/>
 </kw>
-<kw name="E clico em Rentabilidade" library="VerificarTelaRentabilidadeResources">
+<kw name="Quando clico no menu lateral acesso Educação Previdenciária" library="VerificarTelaEducacaoPrevidenciariaResources">
+<kw name="Quando clicar em menu lateral" library="VerificarTelaDeLoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MENU_LATERAL_SAND}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231227 14:00:29.524" level="INFO">Clicking element '//img[contains(@alt,'Menu')]'.</msg>
+<status status="PASS" starttime="20231227 14:00:29.524" endtime="20231227 14:00:29.562"/>
+</kw>
+<status status="PASS" starttime="20231227 14:00:29.523" endtime="20231227 14:00:29.562"/>
+</kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${RENTABILIDADE}</arg>
+<arg>${EDUCACAO_PREV_LAT}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<msg timestamp="20231222 13:09:00.743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231222 13:09:00.744" level="FAIL">Element with locator '//a[contains(.,'Rentabilidade')]' not found.</msg>
-<status status="FAIL" starttime="20231222 13:09:00.597" endtime="20231222 13:09:00.777"/>
+<status status="PASS" starttime="20231227 14:00:29.562" endtime="20231227 14:00:29.867"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${RENTABILIDADE}</arg>
+<arg>${EDUCACAO_PREV_LAT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231222 13:09:00.777" endtime="20231222 13:09:00.777"/>
+<msg timestamp="20231227 14:00:29.868" level="INFO">Clicking element '//a[@href='/portal/site/Multibra-Homolog/Action/EducacaoPrevidenciaria.aspx'][contains(.,'Educação Previdenciária')]'.</msg>
+<status status="PASS" starttime="20231227 14:00:29.868" endtime="20231227 14:00:31.448"/>
 </kw>
-<status status="FAIL" starttime="20231222 13:09:00.597" endtime="20231222 13:09:00.778"/>
+<status status="PASS" starttime="20231227 14:00:29.523" endtime="20231227 14:00:31.448"/>
 </kw>
-<kw name="Então serei direcionado para página Rentabilidade" library="VerificarTelaRentabilidadeResources">
-<status status="NOT RUN" starttime="20231222 13:09:00.778" endtime="20231222 13:09:00.779"/>
+<kw name="E clico em Juntos Pela Saúde" library="VerificarTelaEducacaoPrevidenciariaResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JUNTOS_PELA_SAUDE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231227 14:00:31.450" level="INFO">Clicking element '//h4[@class='block-title'][contains(.,'Juntos pela Saúde')]'.</msg>
+<status status="PASS" starttime="20231227 14:00:31.449" endtime="20231227 14:00:31.510"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231222 13:09:00.779" endtime="20231222 13:09:03.121"/>
+<status status="PASS" starttime="20231227 14:00:31.449" endtime="20231227 14:00:31.511"/>
 </kw>
-<doc>Automação Verificar tela Rentabilidade</doc>
-<tag>CT01</tag>
-<status status="FAIL" starttime="20231222 13:08:49.775" endtime="20231222 13:09:03.122">Element with locator '//a[contains(.,'Rentabilidade')]' not found.</status>
+<kw name="Então serei direcionado para página Juntos Pela Saúde" library="VerificarTelaEducacaoPrevidenciariaResources">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231227 14:00:33.515" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231227 14:00:31.514" endtime="20231227 14:00:33.515"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231227 14:00:33.515" endtime="20231227 14:00:33.534"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${URL_JUNTOS_SAUDE_GET}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20231227 14:00:33.538" level="INFO">${URL_JUNTOS_SAUDE_GET} = https://www.bradescoseguros.com.br/juntospelasaude</msg>
+<status status="PASS" starttime="20231227 14:00:33.534" endtime="20231227 14:00:33.539"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${URL_JUNTOS_SAUDE_GET}</arg>
+<arg>${URL_JUNTOS_SAUDE}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231227 14:00:33.539" endtime="20231227 14:00:33.539"/>
+</kw>
+<status status="PASS" starttime="20231227 14:00:31.513" endtime="20231227 14:00:33.539"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20231227 14:00:33.540" endtime="20231227 14:00:39.970"/>
+</kw>
+<doc>Automação Verificar tela Educação Previdenciária &gt; Juntos Pela Saúde</doc>
+<tag>CT07</tag>
+<status status="PASS" starttime="20231227 14:00:20.545" endtime="20231227 14:00:39.971"/>
 </test>
-<status status="FAIL" starttime="20231222 13:08:49.413" endtime="20231222 13:09:03.124"/>
+<status status="PASS" starttime="20231227 14:00:20.283" endtime="20231227 14:00:39.974"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">CT01</stat>
+<stat pass="1" fail="0" skip="0">CT07</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="VerificarTelaRentabilidade">VerificarTelaRentabilidade</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="VerificarTelaEducacaoPrevidenciaria">VerificarTelaEducacaoPrevidenciaria</stat>
 </suite>
 </statistics>
 <errors>

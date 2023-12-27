@@ -13,5 +13,5 @@ CT01:Verificar Tela de Atualização Cadastral no potal MultiBra
     [Tags]           CT01
     Dado que acesso o portal MultiBra com os usuarios "ut.gdb.assistido1" - "ut.gdb.assistido1"
     Quando clico no menu lateral
-    E clico em Declaração de Atualização Cadastral
+    E clico em Atualização Cadastral
     Então serei direcionado para página Atualização Cadastral

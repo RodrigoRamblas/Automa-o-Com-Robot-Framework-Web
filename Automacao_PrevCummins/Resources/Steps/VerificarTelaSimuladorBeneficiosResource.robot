@@ -14,4 +14,7 @@ Quando clico em Simulador de Beneficios
 
 # Então
 Então serei direcionado para página Simulador de Beneficios
-    Location Should Be              ${URL_SIMULADOR_BENEF}       timeout=10s
+    Sleep                            5s
+    Wait Until Element Is Visible    ${BOTAO_SIMULAR_BENEFICO}
+    Page Should Contain              Simulação
+    

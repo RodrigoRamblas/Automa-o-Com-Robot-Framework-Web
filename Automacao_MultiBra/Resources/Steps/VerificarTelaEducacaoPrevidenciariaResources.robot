@@ -48,7 +48,8 @@ Então serei direcionado para página Educação Previdenciária BRA
 Então serei direcionado para página Educação Previdenciária > Educação Financeira
     Sleep            2s    
     Switch Window    NEW
-    Location Should Be         ${URL_EDUCACAO_FIN}
+    Sleep            3s        
+    Location Should Be               ${URL_EDUCACAO_FIN}
 
 Então serei direcionado para página Curso on-line
     Sleep    2s

@@ -12,10 +12,10 @@ Quando clico no menu lateral
     Click Element            ${MENU_LATERAL_SAND}   
 
 # E
-E clico em Declaração de Atualização Cadastral
+E clico em Atualização Cadastral
     Wait Until Element Is Visible    ${ATUALIZACAO_CADAS_MODULO}    timeout= 10S
     Click Element                    ${ATUALIZACAO_CADAS_MODULO}    
-    Click Element                     ${ATUALIZACAO_CADAS}
+    Click Element                    ${ATUALIZACAO_CADAS}
 
 # Então
 Então serei direcionado para página Atualização Cadastral

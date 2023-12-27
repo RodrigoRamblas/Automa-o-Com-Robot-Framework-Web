@@ -7,3 +7,6 @@ ${URL_SIMULADOR_BENEF}            https://www.portal-hro.com.br/portal/site/Gene
 # Xpath
 ${SIMULADOR_BENEF_INI}            //h7[contains(.,'SIMULADOR DE BENEFÍCIOS')]
 
+
+# Id
+${BOTAO_SIMULAR_BENEFICO}         CalcBenef
