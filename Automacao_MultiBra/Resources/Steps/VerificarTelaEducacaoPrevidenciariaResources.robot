@@ -17,13 +17,16 @@ Quando clico no menu lateral acesso Educação Previdenciária
 
 # E
 E clico em Educação Financeira
-    Click Element                    ${EDUCACAO_FIN}
+    Wait Until Element Is Visible       ${EDUCACAO_FIN}     timeout=10s
+    Click Element                        ${EDUCACAO_FIN}
 
 E clico em Educação Previdenciária
-    Click Element                    ${EDUCACAO_PREV}
+    Wait Until Element Is Visible        ${EDUCACAO_PREV}    timeout=10s
+    Click Element                        ${EDUCACAO_PREV}
 
 E clico em Curso on-line
-     Click Element                   ${CURSO_ONLINE}
+    Wait Until Element Is Visible         ${CURSO_ONLINE}    timeout=10s
+     Click Element                       ${CURSO_ONLINE}
 
 E clico em Movimento Conviva
     Click Element                    ${MOVIMENT_CONVIVA}
@@ -35,6 +38,7 @@ E clico em Juntos Pela Saúde
     Click Element                    ${JUNTOS_PELA_SAUDE}
 
 E clico em Clube de Vantagens
+    Scroll Element Into View         ${CLUBE_VANTEGENS}
     Click Element                    ${CLUBE_VANTEGENS}
 
 # Então
@@ -70,5 +74,5 @@ Então serei direcionado para página Juntos Pela Saúde
     Should Be Equal        ${URL_JUNTOS_SAUDE_GET}              ${URL_JUNTOS_SAUDE}
 
 Então serei direcionado para página Clube de Vantagens
-    ${URL_CLUBE_VANTAGENS_GET}=    Get Location
-    Should Be Equal        ${URL_CLUBE_VANTAGENS_GET}              ${URL_CLUBE_VANTAGENS}
+    Switch Window    new
+    Title Should Be    Clube de Vantagens - Bradesco Seguros

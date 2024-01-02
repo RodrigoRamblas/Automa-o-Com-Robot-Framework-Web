@@ -213,10 +213,10 @@ Então verifico os itens da lista Assistido
     @{lista_de_textos} =    Create List
     ${elements} =           Get WebElements    xpath=//*[@id="form1"]/div[4]/div[1]/ul//li/a
     FOR    ${element}       IN    @{elements}
-        Sleep               300ms         
+        Sleep               50ms         
         ${text} =           Get Text    ${element}
         Append To List      ${lista_de_textos}    ${text}
-        Sleep               300ms
+        Sleep               50ms
         Log                 ${lista_de_textos}
     END
      # Comparar as listas
@@ -254,10 +254,10 @@ Então verifico os itens da lista Autopatrocinado
     @{lista_de_textos} =    Create List
     ${elements} =           Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}       IN    @{elements}
-        Sleep               300ms
+        Sleep               50ms
         ${text} =           Get Text    ${element}
         Append To List      ${lista_de_textos}    ${text}
-        Sleep               300ms
+        Sleep               50ms
         Log                 ${lista_de_textos}
     END
      # Comparar as listas
@@ -286,6 +286,7 @@ Então verifico os itens da lista Autopatrocinado
 ...     Autopatrocinio
 ...     
 ...    
+...     Menu Solicitação de Alterações
 
     Lists Should Be Equal                ${ITENS_MENU}        ${lista_de_textos}        ignore_order=False
 
@@ -293,10 +294,10 @@ Então verifico os itens da lista Ativo
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas
@@ -328,6 +329,7 @@ Então verifico os itens da lista Ativo
 ...    Retirada 
 ...     
 ...     
+...    Menu Solicitação de Alterações
 ...    Relatórios 
 ...    
 ...    
@@ -339,10 +341,10 @@ Então verifico os itens da lista Ativonc
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas
@@ -375,10 +377,10 @@ Então verifico os itens da lista Bpd
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas
@@ -405,6 +407,7 @@ Então verifico os itens da lista Bpd
 ...    Retirada 
 ...    
 ...     
+...    Menu Solicitação de Alterações
 ...    Declaração de Contribuição
 
     Lists Should Be Equal                ${ITENS_MENU}        ${lista_de_textos}        ignore_order=False 
@@ -413,10 +416,10 @@ Então verifico os itens da lista Desligado
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas
@@ -442,10 +445,10 @@ Então verifico os itens da lista Da
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas
@@ -467,10 +470,12 @@ Então verifico os itens da lista Da
 ...    Formulários 
 ...    Informe de Rendimento 
 ...    Rentabilidade 
+...    Instituto no Desligamento
+...    
 ...    Retirada 
 ...     
 ...     
-...    Menu Solicitação\nde Alterações
+...    Menu Solicitação de Alterações
 
     Lists Should Be Equal                ${ITENS_MENU}        ${lista_de_textos}        ignore_order=False 
 
@@ -478,10 +483,10 @@ Então verifico os itens da lista Adm
     @{lista_de_textos} =     Create List
     ${elements} =            Get WebElements    ${LISTA_MENU_LATERAL} 
     FOR    ${element}        IN    @{elements}
-        Sleep                300ms
+        Sleep                50ms
         ${text} =            Get Text    ${element}
         Append To List       ${lista_de_textos}    ${text}
-        Sleep                300ms
+        Sleep                50ms
         Log                  ${lista_de_textos}
     END
      # Comparar as listas

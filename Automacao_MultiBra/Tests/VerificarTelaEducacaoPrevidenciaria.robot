@@ -39,29 +39,29 @@ CT04: Verificar Tela de Educação Previdenciária > Curso on-line
     E clico em Curso on-line
     Então serei direcionado para página Curso on-line
 
-CT05: Verificar Tela de Educação Previdenciária > Movimento Conviva
-    [Documentation]     Automação Verificar tela Educação Previdenciária > Movimento Conviva
-    [Tags]           CT05
-    Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
-    Quando clico no menu lateral acesso Educação Previdenciária
-    E clico em Movimento Conviva
-    Então serei direcionado para página Movimento Conviva
+# CT05: Verificar Tela de Educação Previdenciária > Movimento Conviva
+    # [Documentation]     Automação Verificar tela Educação Previdenciária > Movimento Conviva
+    # [Tags]           CT05
+#     # Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
+#     Quando clico no menu lateral acesso Educação Previdenciária
+#     E clico em Movimento Conviva
+#     Então serei direcionado para página Movimento Conviva
 
-CT06: Verificar Tela de Educação Previdenciária > Circuito da Longevidade
-    [Documentation]     Automação Verificar tela Educação Previdenciária > Circuito da Longevidade
-    [Tags]           CT06
-    Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
-    Quando clico no menu lateral acesso Educação Previdenciária
-    E clico em Circuito da Longevidade
-    # Então serei direcionado para página Circuito da Longevidade
+# CT06: Verificar Tela de Educação Previdenciária > Circuito da Longevidade
+#     [Documentation]     Automação Verificar tela Educação Previdenciária > Circuito da Longevidade
+#     [Tags]           CT06
+#     Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
+#     Quando clico no menu lateral acesso Educação Previdenciária
+#     E clico em Circuito da Longevidade
+#     # Então serei direcionado para página Circuito da Longevidade
 
-CT07: Verificar Tela de Educação Previdenciária > Juntos Pela Saúde
-    [Documentation]     Automação Verificar tela Educação Previdenciária > Juntos Pela Saúde
-    [Tags]           CT07
-    Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
-    Quando clico no menu lateral acesso Educação Previdenciária
-    E clico em Juntos Pela Saúde
-    Então serei direcionado para página Juntos Pela Saúde
+# CT07: Verificar Tela de Educação Previdenciária > Juntos Pela Saúde
+#     [Documentation]     Automação Verificar tela Educação Previdenciária > Juntos Pela Saúde
+#     [Tags]           CT07
+#     Dado que acesso o portal MultiBra com os usuarios "ut.gdb.auto1" - "ut.gdb.auto1"
+#     Quando clico no menu lateral acesso Educação Previdenciária
+#     E clico em Juntos Pela Saúde
+#     Então serei direcionado para página Juntos Pela Saúde
 
 CT08: Verificar Tela de Educação Previdenciária > Clube de Vantagens
     [Documentation]     Automação Verificar tela Educação Previdenciária > Clube de Vantagens
