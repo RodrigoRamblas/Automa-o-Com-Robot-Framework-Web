@@ -48,7 +48,7 @@ Então serei direcionado para página Educação Previdenciária
 
 Então serei direcionado para página Educação Previdenciária BRA
     ${URL_EDUCACAO_PREV_BRA_GET}=    Get Location
-    Should Be Equal        ${URL_EDUCACAO_PREV_BRA_GET}        ${URL_EDUCACAO_PREV}
+    Should Be Equal        ${URL_EDUCACAO_PREV_BRA_GET}        ${URL_EDUCACAO_PREV_BRA}
 Então serei direcionado para página Educação Previdenciária > Educação Financeira
     Sleep            2s    
     Switch Window    NEW

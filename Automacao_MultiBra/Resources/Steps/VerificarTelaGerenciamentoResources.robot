@@ -115,8 +115,7 @@ E na guia Participante acesso Configuração do Cadastro Web
 
 #  Então 
 Então serei direcionado para página Gerenciamento de Atvidade
-    ${URL_Gerenciamento_GetLocatio}=    Get Location    # Obtém a URL atual
-    Should Be Equal     ${URL_Gerenciamento_GetLocatio}     ${URL_Gerenciamento}
+    Location Should Be     ${URL_Gerenciamento}
 
 Então serei direcionado para página Atualização Cadastral
     ${URL_GerATUALIZACAO}=    Get Location    # Obtém a URL atual

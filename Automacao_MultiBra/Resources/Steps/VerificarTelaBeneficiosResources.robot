@@ -33,6 +33,9 @@ E clico em Simulador de beneficios
 
 # Então
 Então serei direcionado para página Ficha Financeira
+    ${mensagem_visivel}    Run Keyword And Return Status    Page Should Contain    ERRO
+    Run Keyword If    '${mensagem_visivel}' == 'True'    Fail    A mensagem de erro está presente
+    Run Keyword If    '${mensagem_visivel}' == 'False'    Log    A mensagem de erro não está presente
     ${URL_FICHA_FINA_GET}=    Get Location
     Should Be Equal    ${URL_FICHA_FINA_GET}            ${URL_FICHA_FINA}
 

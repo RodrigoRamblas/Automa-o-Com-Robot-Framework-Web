@@ -24,7 +24,7 @@ Dado que acesso o portal MultiBra com os usuarios "ua.mon.titan" - "Conduent@1"
 # Quando
 Quando clico no menu lateral
     Click Element                    ${MENU_Sand} 
-    Sleep                            2s            
+    Sleep                            1s            
 
 # E
 E clico em Pesquisa Participante

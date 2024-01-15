@@ -242,6 +242,7 @@ Então verifico os itens da lista Assistido
 ...    Retirada
 ...    
 ...    
+...    Menu Solicitação de Alterações
 ...    Declaração de Contribuição 
 ...    Benefícios 
 ...    
@@ -277,6 +278,8 @@ Então verifico os itens da lista Autopatrocinado
 ...     
 ...     Formulários
 ...     Rentabilidade
+...     Alteração de Perfil
+...    
 ...     Atualização Cadastral 
 ...    
 ...     Educação Previdenciária 
@@ -491,7 +494,7 @@ Então verifico os itens da lista Adm
     END
      # Comparar as listas
     ${ITENS_MENU}    Create List
-...    PARTICIPANTE 
+...    Participante 
 ...     
 ...    Gerenciamento de Atividades 
 ...    Alteração de Senha 

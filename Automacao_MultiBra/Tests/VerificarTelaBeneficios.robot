@@ -10,18 +10,16 @@ Resource          ../Resources/Steps/VerificarTelaDeLoginResources.robot
 
 CT01:Verificar Tela de Ficha Financeira no potal MultiBra
     [Documentation]     Automação Verificar tela Ficha Financeira
-    [Tags]           CT01
-    # Não possui mais essa funcionalidade para perfil adm
+    [Tags]              CT01
     Dado que acesso o portal MultiBra com os usuarios "ut.tecprev.assistido1" - "ut.tecprev.assistido1"
     Quando clico no menu lateral
     E clico no módulo Beneficios
     E clico em Ficha Financeira
-    # Então serei direcionado para página Ficha Financeira (URL ERRO)
+    Então serei direcionado para página Ficha Financeira
 
 CT02:Verificar Tela de Demonstrativo de pagamentos no potal MultiBra
     [Documentation]     Automação Verificar tela Demonstrativo de pagamentos
-    [Tags]           CT02
-    # Não possui mais essa funcionalidade para perfil adm
+    [Tags]              CT02
     Dado que acesso o portal MultiBra com os usuarios "ut.tecprev.assistido1" - "ut.tecprev.assistido1"
     Quando clico no menu lateral
     E clico no módulo Beneficios
@@ -32,8 +30,8 @@ CT03:Verificar Tela de Simulador de beneficios no potal MultiBra
     [Documentation]     Automação Verificar tela Simulador de beneficiios
     [Tags]           CT03
     # Não possui mais essa funcionalidade para perfil adm
-    Dado que acesso o portal MultiBra com os usuarios "adm.gdbprev.teste1" - "adm.gdbprev.teste1"
+    Dado que acesso o portal MultiBra com os usuarios "ua.application" - "Conduent@1"
     Quando clico no menu lateral
     E clico no módulo Beneficios
     E clico em Simulador de beneficios
-    # Então serei direcionado para página Simulador de beneficios (URL ERRO)
+    Então serei direcionado para página Simulador de beneficios
