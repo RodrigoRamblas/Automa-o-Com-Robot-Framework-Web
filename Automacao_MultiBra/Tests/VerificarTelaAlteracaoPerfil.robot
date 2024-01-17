@@ -32,3 +32,51 @@ CT03:Verificar Tela de Historico de Alteração de Perfil no potal MultiBra
     Quando clico no menu lateral
     E clico em módulo Alteração Perfil acesso Historico de Alteração de Perfil
     #Então serei direcionado para página Historico de Alteração de Perfil
+
+CT04: Validação tela Análise de Perfil de Investidor
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT04
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando clico no menu lateral
+    E clico em módulo Alteração Perfil acesso Avaliação de perfil de investidor
+    Então serei direcionado para página Avaliação de perfil de investidor
+
+CT05: Validação Análise de Perfil de Investido clicando botão "Responder mais tarde"
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT05
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando acesso Avaliação de perfil de investidor
+    E clico no botão "Responder mais tarde"
+    Então serei direcionado para página inicial "minha conta"
+
+CT06: Validação Análise de Perfil de Investido - Enviar questionário sem preenchimento completo
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT06
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando acesso Avaliação de perfil de investidor
+    E envio o questionário sem preenchê-lo completamente.
+    Então uma notificação solicitando preenchimento deverá ser exibida
+
+CT07: Validação Análise de Perfil de Investido - Enviar questionário com preenchimento Conservador
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT07
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando acesso Avaliação de perfil de investidor
+    E preencho informações para perfil Conservador
+    Então meu perfil de investidor será Conservador
+
+CT08: Validação Análise de Perfil de Investido - Enviar questionário com preenchimento Moderado
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT08
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando acesso Avaliação de perfil de investidor
+    E preencho informações para perfil Moderado
+    Então meu perfil de investidor será Moderado
+
+CT09: Validação Análise de Perfil de Investido - Enviar questionário com preenchimento Agressivo
+    [Documentation]     Automação Verificar tela Suitability ou Análise de Perfil de Investidor
+    [Tags]           CT09
+    Dado que acesso o portal MultiBra com os usuarios "ut.andritz.ativo1" - "ut.andritz.ativo1"
+    Quando acesso Avaliação de perfil de investidor
+    E preencho informações para perfil Agressivo
+    # Então meu perfil de investidor será Agressivo
