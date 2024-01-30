@@ -55,7 +55,7 @@ CT06:Acessar com logins autopatrocinado
         ut.gdb.auto1                            ut.gdb.auto1
         ut.coatscd.auto1                        ut.coatscd.auto1
         ut.phillipmorris.auto1                  ut.phillipmorris.auto1         
-        ut.nadirprev.auto1                      ut.nadirprev.auto1             
+        # ut.nadirprev.auto1                      ut.nadirprev.auto1             
         ut.rabobank.auto1                       ut.rabobank.auto1              
         ut.tecprev.auto1                        ut.tecprev.auto1               
         ut.west.auto1                           ut.west.auto1
@@ -130,7 +130,7 @@ CT12:Acessar com logins adm
     [Tags]              CT12
     [Template]    Login com Usuário Adm
 	    #usuario_adm				            #senha_adm               
-        adm.gdbprev.teste1		                adm.gdbprev.teste1
+        # adm.gdbprev.teste1		                adm.gdbprev.teste1
         adm.coatscd.teste1		                adm.coatscd.teste1
         adm.philipmorris.teste1		            adm.philipmorris.teste1
         adm.nadirprev.teste1		            adm.nadirprev.teste1

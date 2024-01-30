@@ -7,6 +7,6 @@ ${URL_CONSELHO_DELIBERATIVO}    https://www.portal-hro.com.br/portal/site/Multib
 
 # Xpath
 ${CONSELHOS_LAT}                //a[contains(.,'Conselhos')]
-${CONSELHO_FISCAL}              //a[contains(.,'Fiscal')]
-${CONSELHO_DELIBERATIVO}        //a[contains(.,'Deliberativo')]
+${CONSELHO_FISCAL}              //span[@class='text-info-card'][contains(.,'Fiscal')]
+${CONSELHO_DELIBERATIVO}        //span[@class='text-info-card'][contains(.,'Deliberativo')]
 

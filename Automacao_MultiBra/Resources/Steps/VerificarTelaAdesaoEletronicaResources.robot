@@ -23,10 +23,12 @@ Quando clico no menu lateral
 # E
 E clico em Adesão Eletrônica
     Wait Until Element Is Visible     ${ADESAO_ELETRONICA}    timeout=10s
+    Scroll Element Into View          ${ADESAO_ELETRONICA}
     Click Element                     ${ADESAO_ELETRONICA}
 
 E clico módulo Adesão
     Wait Until Element Is Visible     ${MOD_ADESAO}    timeout=10s
+    Scroll Element Into View          ${MOD_ADESAO}
     Click Element                     ${MOD_ADESAO}
 
 E clico no botão Sem Macro

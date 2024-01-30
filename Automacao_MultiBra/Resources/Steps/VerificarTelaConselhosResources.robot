@@ -19,11 +19,16 @@ E clico em Conselhos
 
 E clico em Conselhos acesso Conselho Fiscal
     Click Element                    ${CONSELHOS_LAT}
+    Wait Until Element Is Visible    ${CONSELHO_FISCAL}
     Click Element                    ${CONSELHO_FISCAL}
+    
 
 E clico em Conselhos acesso Conselho Deliberativo
     Click Element                    ${CONSELHOS_LAT}
+    Wait Until Element Is Visible    ${CONSELHO_DELIBERATIVO}
     Click Element                    ${CONSELHO_DELIBERATIVO}
+
+    
 
 
 # Então
